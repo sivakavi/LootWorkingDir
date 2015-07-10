@@ -1,0 +1,268 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content view -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#33B5E5"
+        android:layout_alignParentBottom="true">
+
+    </LinearLayout>
+        <!--  footer -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/footerhomebtn"
+            android:src="@drawable/home"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/divider1"
+            android:src="@drawable/seperator"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/footerhomebtn"
+            android:layout_toLeftOf="@+id/footersearchbtn"
+            android:layout_toStartOf="@+id/footersearchbtn"
+            android:layout_marginBottom="5dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/footersearchbtn"
+            android:src="@drawable/explore"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/play"
+            android:layout_toStartOf="@+id/play"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play"
+            android:src="@drawable/play"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/footerbagbtn"
+            android:src="@drawable/bag"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/play"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/divider3"
+            android:src="@drawable/seperator"
+            android:layout_toLeftOf="@+id/footershopbtn"
+            android:layout_toRightOf="@+id/footerbagbtn"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/footershopbtn"
+            android:src="@drawable/shop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_marginRight="5dp" />
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/drawerPane"
+        android:layout_gravity="start">
+
+        <!-- Profile Box -->
+
+        <RelativeLayout
+            android:id="@+id/profileBox"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="homer123"
+                android:textColor="#2a8ab0"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drawer_img"
+                android:layout_below="@+id/userName"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/goldcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="23"
+                android:textColor="#2a8ab0"
+                android:textSize="35sp"
+                android:layout_below="@+id/avatar"
+                android:layout_centerHorizontal="true"/>
+
+
+            <ImageView
+                android:id="@+id/goldimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gold_drawer"
+                android:layout_toRightOf="@+id/goldcount"
+                android:layout_below="@+id/avatar"
+                android:layout_marginTop="15dp"/>
+
+
+            <TextView
+                android:id="@+id/lootcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="5,668"
+                android:textColor="#2a8ab0"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_below="@+id/goldcount"/>
+
+
+            <ImageView
+                android:id="@+id/lootimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/count_loot"
+                android:layout_toRightOf="@+id/lootcount"
+                android:layout_below="@id/goldcount"
+                android:layout_marginTop="3dp"/>
+
+        <RelativeLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#d6f1fa"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lootimage">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timer_img"
+                android:src="@drawable/timer"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:text="05:35"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/timer_img"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timencount"
+                android:layout_toRightOf="@+id/time"
+                android:text="-"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/count"
+                android:text="5,768"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/timencount"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/count_loot"
+                android:layout_toRightOf="@+id/count"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+        <!-- List of Actions (pages) -->
+        <ListView
+            android:id="@+id/navList"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profileBox"
+            android:choiceMode="singleChoice"
+            android:listSelector="#33B5E5"
+            android:background="#fff" />
+
+    </RelativeLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="listing_item">15sp</dimen>
+    <dimen name="listing_discount">15sp</dimen>
+    <dimen name="listing_goldtxt">20sp</dimen>
+    <dimen name="listing_redeem">20sp</dimen>
+    <dimen name="listing_redeemed">20sp</dimen>
+    <!--<dimen name="bar_height">20dp</dimen>-->
+</resources>

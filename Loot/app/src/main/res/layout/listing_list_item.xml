@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.programmer.myapplication.listing">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listing1"
+        android:src="@drawable/listing1"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H&amp;M"
+        android:id="@+id/listing_item"
+        android:layout_below="@+id/listing1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/listing_item"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storewide sale 80%"
+        android:id="@+id/listing_discount"
+        android:layout_below="@+id/listing_item"
+        android:layout_alignLeft="@+id/listing_item"
+        android:layout_alignStart="@+id/listing_item"
+        android:textSize="@dimen/listing_discount"
+        android:textColor="#000"
+        android:layout_marginTop="-5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listing_goldimg"
+        android:layout_below="@+id/listing_discount"
+        android:layout_alignLeft="@+id/listing_discount"
+        android:layout_alignStart="@+id/listing_discount"
+        android:src="@drawable/gold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23"
+        android:id="@+id/listing_goldtxt"
+        android:textSize="@dimen/listing_goldtxt"
+        android:textColor="#000"
+        android:layout_alignBottom="@+id/listing_goldimg"
+        android:layout_toRightOf="@+id/listing_goldimg"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="378"
+        android:id="@+id/listing_redeem"
+        android:textSize="@dimen/listing_redeem"
+        android:textColor="#000"
+        android:layout_alignTop="@+id/listing_wish"
+        android:layout_toLeftOf="@+id/listing_wish"
+        android:layout_toStartOf="@+id/listing_wish"
+        android:layout_marginRight="67dp"
+        android:layout_marginEnd="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="redeemed"
+        android:id="@+id/listing_redeemed"
+        android:textSize="@dimen/listing_redeemed"
+        android:textColor="#000"
+        android:layout_alignLeft="@+id/listing_redeem"
+        android:layout_alignStart="@+id/listing_redeem"
+        android:layout_below="@+id/listing_redeem"
+        android:layout_marginTop="-10dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/listing_wish"
+        android:layout_height="@dimen/listing_wish"
+        android:id="@+id/listing_wish"
+        android:src="@drawable/wishlist_active"
+        android:layout_below="@+id/listing1"
+        android:layout_alignRight="@+id/listing1"
+        android:layout_alignEnd="@+id/listing1"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="10dip" />
+
+</RelativeLayout>

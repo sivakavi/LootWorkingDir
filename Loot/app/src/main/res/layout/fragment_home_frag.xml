@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.programmer.myapplication.home_frag">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeimg_img"
+        android:padding="0dp"
+        android:src="@drawable/homebg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hot deal this week :"
+        android:id="@+id/home_title1"
+        android:layout_below="@+id/homeimg_img"
+        android:textSize="@dimen/home_title1"
+        android:textStyle="bold|italic"
+        android:textColor="#59595c"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starbucks, Christmas in a Cup"
+        android:id="@+id/home_title2"
+        android:layout_below="@+id/home_title1"
+        android:textSize="@dimen/home_title2"
+        android:textStyle="italic"
+        android:textColor="#59595c"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50% off second cup Cafe Latte"
+        android:id="@+id/home_title3"
+        android:layout_below="@+id/home_title2"
+        android:textSize="@dimen/home_title3"
+        android:textStyle="italic"
+        android:textColor="#59595c"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/home_title2"
+        android:layout_alignEnd="@+id/home_title2"
+        android:layout_alignTop="@+id/home_title3"
+        android:layout_toRightOf="@+id/home_title3"
+        android:layout_toEndOf="@+id/home_title3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/wishlist_active"
+        android:layout_below="@+id/homeimg_img"
+        android:layout_alignRight="@+id/homeimg_img"
+        android:layout_alignEnd="@+id/homeimg_img"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="378"
+        android:id="@+id/home_num"
+        android:textSize="@dimen/home_num"
+        android:layout_alignBaseline="@+id/home_title3"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:layout_toStartOf="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="redeemed"
+        android:id="@+id/home_redeemed"
+        android:textSize="@dimen/home_redeemed"
+        android:layout_below="@+id/home_title2"
+        android:layout_alignLeft="@+id/home_num"
+        android:layout_alignStart="@+id/home_num"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_gold"
+        android:src="@drawable/gold"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/home_title3"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23"
+        android:id="@+id/homegold"
+        android:textSize="@dimen/homegold"
+        android:textColor="#59595c"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/home_title3"
+        android:layout_toRightOf="@+id/home_gold"
+        android:layout_marginTop="@dimen/homegold_mtop"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView34"
+        android:src="@drawable/counting_dot"
+        android:layout_below="@+id/home_redeemed"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

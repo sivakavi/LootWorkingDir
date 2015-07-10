@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.programmer.myapplication.sign_in">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView21"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/signin" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView21"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#38b8ea"
+        android:hint="Email"
+        android:textColorHint="#38b8ea"
+
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:backgroundTint="#38b8ea"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dip"
+        android:hint="Password"
+        android:textColorHint="#38b8ea"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button5"
+        android:layout_marginTop="20dp"
+        android:background="#ff38b8ea"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password ?"
+        android:id="@+id/textView36"
+        android:textColor="#38b8ea"
+        android:textSize="18sp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Here !"
+        android:id="@+id/textView37"
+        android:layout_alignTop="@+id/textView36"
+        android:layout_toRightOf="@+id/textView36"
+        android:layout_toEndOf="@+id/textView36"
+        android:textColor="#38b8ea"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dip" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:background="@drawable/twitter_btn"
+        android:layout_below="@+id/textView36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/twitter_btn"
+        android:layout_marginTop="20dip"
+        android:text="log in with Twitter"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/facebook_btn"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/facebook_btn"
+        android:layout_marginTop="10dip"
+        android:text="log in with Facebook"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a member yet ?"
+        android:id="@+id/textView27"
+        android:textColor="#38b8ea"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/textView35"
+        android:layout_alignRight="@+id/textView36"
+        android:layout_alignEnd="@+id/textView36" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up now !"
+        android:id="@+id/textView35"
+        android:textColor="#38b8ea"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageButton2"
+        android:layout_toRightOf="@+id/textView36"
+        android:layout_toEndOf="@+id/textView36"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView22"
+        android:src="@drawable/email_signin"
+        android:paddingBottom="20dip"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="5dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView30"
+        android:src="@drawable/password_signin"
+        android:paddingBottom="20dip"
+        android:paddingRight="5dip"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignLeft="@+id/imageView22"
+        android:layout_alignStart="@+id/imageView22" />
+
+</RelativeLayout>

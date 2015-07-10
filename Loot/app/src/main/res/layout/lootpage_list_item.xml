@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--android:background="@drawable/image_bg"
+android:background="@drawable/list_selector"-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="#fff"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:src="@drawable/loot1"/>
+
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginTop="10dp"
+        android:text="Old Chang Kee"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <!-- offer Name -->
+    <TextView
+        android:id="@+id/offer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Buy 2 curry puff for only $2.90" />
+
+    <!-- Rightend Duration -->
+
+    <!-- Rightend Arrow -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redeemed on : 13 Nov 2014"
+        android:id="@+id/redeem"
+        android:layout_below="@+id/offer"
+        android:layout_alignLeft="@+id/offer"
+        android:layout_alignStart="@+id/offer"
+        android:textColor="#343434" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expires on : 28 Nov 2014"
+        android:id="@+id/expires"
+        android:layout_below="@+id/redeem"
+        android:layout_alignLeft="@+id/redeem"
+        android:layout_alignStart="@+id/redeem"
+        android:textColor="#ffaf0010" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOOT IT"
+        android:id="@+id/btnloot"
+        android:textColor="#ff38b8ea"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/expires"
+        android:layout_alignRight="@+id/offer"
+        android:layout_alignEnd="@+id/offer"
+        android:layout_marginRight="5dip" />
+
+</RelativeLayout>

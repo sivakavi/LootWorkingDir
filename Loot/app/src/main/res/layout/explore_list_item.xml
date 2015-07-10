@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/explore_main"
+        android:src="@drawable/loot1"
+        android:layout_above="@+id/explore_title"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/explore_title"
+        android:text="Old Chang Kee"
+        android:textSize="@dimen/explore_title"
+        android:textStyle="bold"
+        android:textColor="#ff000000"
+        android:layout_above="@+id/explore_buy"
+        android:layout_alignLeft="@+id/explore_buy"
+        android:layout_alignStart="@+id/explore_buy"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy 2 Curry Puff for only $2.90"
+        android:id="@+id/explore_buy"
+        android:textSize="@dimen/explore_buy"
+        android:layout_above="@+id/gold_count"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/explore_redeem"
+        android:layout_alignEnd="@+id/explore_redeem" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/explore_gold"
+        android:src="@drawable/gold_explore"
+        android:layout_below="@+id/explore_buy"
+        android:layout_alignLeft="@+id/explore_buy"
+        android:layout_alignStart="@+id/explore_buy"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23"
+        android:id="@+id/gold_count"
+        android:textSize="@dimen/gold_count"
+        android:textColor="#ff000000"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/explore_gold"
+        android:layout_toEndOf="@+id/explore_gold"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/explore_wish"
+        android:src="@drawable/explore_active"
+        android:layout_above="@+id/explore_redeem"
+        android:layout_alignRight="@+id/explore_main"
+        android:layout_alignEnd="@+id/explore_main"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/explore_redeem"
+        android:text="392"
+        android:textColor="#ff000000"
+        android:textSize="@dimen/explore_redeem"
+        android:layout_below="@+id/explore_buy"
+        android:layout_alignLeft="@+id/explore_redeemed"
+        android:layout_alignStart="@+id/explore_redeemed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="redeemed"
+        android:id="@+id/explore_redeemed"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:layout_alignBottom="@+id/gold_count"
+        android:layout_alignRight="@+id/explore_wish"
+        android:layout_alignEnd="@+id/explore_wish" />
+
+</RelativeLayout>

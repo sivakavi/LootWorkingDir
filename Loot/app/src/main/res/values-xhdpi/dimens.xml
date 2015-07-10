@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="homegold">26sp</dimen>
+    <dimen name="homegold_mtop">9dp</dimen>
+    <dimen name="home_title1">20sp</dimen>
+    <dimen name="home_title2">17sp</dimen>
+    <dimen name="home_title3">17sp</dimen>
+    <dimen name="home_num">26sp</dimen>
+    <dimen name="home_redeemed">22sp</dimen>
+    <dimen name="terms_width">260dp</dimen>
+    <dimen name="terms_cont">13sp</dimen>
+    <dimen name="detail4_num">35sp</dimen>
+    <dimen name="detail4_redeem">25sp</dimen>
+    <dimen name="listing_item">20sp</dimen>
+    <dimen name="listing_discount">18sp</dimen>
+    <dimen name="listing_goldtxt">25sp</dimen>
+    <dimen name="listing_redeem">25sp</dimen>
+    <dimen name="listing_redeemed">23sp</dimen>
+    <dimen name="listing_wish">40dp</dimen>
+    <dimen name="loot_back">15dp</dimen>
+    <dimen name="loot_redeemed_item">18sp</dimen>
+    <dimen name="loot_itemcount">18sp</dimen>
+
+    <!--<dimen name="bar_height">20dp</dimen>-->
+</resources>
